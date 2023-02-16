@@ -71,3 +71,10 @@ create table teste (
     inner join departments d on d.department_id = e.department_id
     group by d.department_name;
     
+    --Buscar todos os funcionários com salário > 8000
+    --exibindo o nome, salario e data de contratação;
+    --tabela employees
+    
+    select first_name, salary, hire_date
+    from employees
+    where salary > 8000;
